@@ -157,7 +157,7 @@ const CATEGORIAS = [
     { id: "bebidas", nome: "Bebidas" }
 ];
 
-const TAXA_ENTREGA = 5.9;
+const TAXA_ENTREGA = 9.9;
 
 function formatarPreco(valor) {
     return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
