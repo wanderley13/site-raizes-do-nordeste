@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — Raízes do Nordeste</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body class="pagina-auth">
+
+<header id="topo">
+    <div class="topo-inner">
+        <a href="index.html" class="marca">
+            <img src="assets/logo.png" alt="Raízes do Nordeste">
+        </a>
+    </div>
+</header>
+
+<main class="auth-main">
+    <div class="login-box">
+        <h2>Bem-vindo de volta</h2>
+        <p class="subtitulo">Entre para pedir comidas típicas e acompanhar o site</p>
+
+        <div id="msg-login" class="mensagem" role="alert" hidden></div>
+
+        <form id="form-login">
+        <div class="campo">
+            <label for="login-user">Usuário</label>
+            <input type="text" id="login-user" placeholder="Seu usuário" autocomplete="username" required>
+        </div>
+        <div class="campo">
+            <label for="login-pass">Senha</label>
+            <input type="password" id="login-pass" placeholder="Sua senha" autocomplete="current-password" required>
+        </div>
+
+        <button type="submit" class="btn-submit" id="btn-login">Entrar</button>
+        </form>
+
+        <p class="links-auth">Não tem conta? <a href="cadastro.html">Cadastre-se</a> · <a href="index.html">Voltar ao site</a></p>
+    </div>
+</main>
+
+<script src="js/auth.js"></script>
+<script>
+if (Auth.estaLogado()) {
+    Auth.redirecionarAposLogin("index.html");
+}
+</script>
+</body>
+</html>

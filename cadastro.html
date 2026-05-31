@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro — Raízes do Nordeste</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body class="pagina-auth">
+
+<header id="topo">
+    <div class="topo-inner">
+        <a href="index.html" class="marca">
+            <img src="assets/logo.png" alt="Raízes do Nordeste">
+        </a>
+    </div>
+</header>
+
+<main class="auth-main">
+    <div class="login-box">
+        <h2>Criar conta</h2>
+        <p class="subtitulo">Cadastre-se para pedir comidas típicas do Nordeste</p>
+
+        <div id="msg-cadastro" class="mensagem" role="alert" hidden></div>
+
+        <form id="form-cadastro">
+        <div class="campo">
+            <label for="cad-user">Usuário</label>
+            <input type="text" id="cad-user" placeholder="Escolha um usuário" autocomplete="username" required>
+        </div>
+        <div class="campo">
+            <label for="cad-pass">Senha</label>
+            <input type="password" id="cad-pass" placeholder="Crie uma senha" autocomplete="new-password" required>
+        </div>
+
+        <div class="lgpd-box">
+            <label class="lgpd-check" for="lgpd-cadastro">
+                <input type="checkbox" id="lgpd-cadastro" required>
+                <span>Li e concordo com o uso dos meus dados pessoais para cadastro e pedidos, conforme a <strong>LGPD</strong> (Lei nº 13.709/2018).</span>
+            </label>
+        </div>
+
+        <button type="submit" class="btn-submit" id="btn-cadastro">Cadastrar</button>
+        </form>
+
+        <p class="links-auth">Já tem conta? <a href="login.html">Fazer login</a> · <a href="index.html">Voltar ao site</a></p>
+    </div>
+</main>
+
+<script src="js/auth.js"></script>
+<script>
+if (Auth.estaLogado()) {
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>

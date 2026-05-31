@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir comida — Raízes do Nordeste</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="compras.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body class="pagina-compras pagina-inicio">
+
+<header id="topo" class="topo-food">
+    <div class="topo-inner">
+        <a href="index.html" class="marca">
+            <img src="assets/logo.png" alt="Raízes do Nordeste">
+        </a>
+
+        <button type="button" class="btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+        <nav id="nav-principal" aria-label="Principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="nav-compras-destaque"><a href="compras.html">Pedir comida</a></li>
+                <li id="menu-login"><a href="login.html">Login</a></li>
+                <li id="menu-cadastro"><a href="cadastro.html">Cadastro</a></li>
+                <li id="menu-usuario" style="display: none;"></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="compras-topo">
+    <div class="compras-topo-inner">
+        <div>
+            <h1>Sabores do Nordeste</h1>
+            <p>Comidas típicas entregues na sua casa</p>
+        </div>
+        <div class="busca-wrap">
+            <input type="search" id="busca-cardapio" placeholder="Buscar prato, doce, bebida..." aria-label="Buscar no cardápio">
+        </div>
+        <button type="button" class="btn-carrinho-topo" id="btn-carrinho-topo">
+            🛒 Carrinho
+            <span class="badge-carrinho" id="badge-carrinho" hidden>0</span>
+        </button>
+    </div>
+</div>
+
+<main class="compras-layout">
+    <div class="filtro-categorias" id="filtro-categorias"></div>
+
+    <p id="cardapio-vazio" class="cardapio-vazio" hidden>Nenhum item encontrado. Tente outra busca ou categoria.</p>
+    <div class="lista-produtos" id="lista-produtos"></div>
+</main>
+
+<!-- Painel lateral do carrinho (estilo app de delivery) -->
+<div class="overlay-carrinho" id="overlay-carrinho" aria-hidden="true"></div>
+
+<aside class="painel-carrinho" id="painel-carrinho" aria-label="Seu carrinho">
+    <div class="carrinho-cabecalho">
+        <h2>Seu pedido</h2>
+        <button type="button" class="btn-fechar" id="btn-fechar-carrinho" aria-label="Fechar carrinho">×</button>
+    </div>
+
+    <div class="itens-carrinho" id="itens-carrinho">
+        <p class="carrinho-vazio">Carregando...</p>
+    </div>
+
+    <div class="carrinho-rodape">
+        <div id="resumo-valores"></div>
+
+        <p id="msg-checkout" class="msg-checkout" hidden></p>
+
+        <div class="campo-checkout">
+            <label for="endereco-entrega">Endereço de entrega</label>
+            <input type="text" id="endereco-entrega" placeholder="Rua, número, bairro, cidade">
+        </div>
+        <div class="campo-checkout">
+            <label for="forma-pagamento">Pagamento</label>
+            <select id="forma-pagamento">
+                <option value="pix">PIX</option>
+                <option value="cartao">Cartão</option>
+                <option value="dinheiro">Dinheiro</option>
+            </select>
+        </div>
+
+        <label class="lgpd-check lgpd-checkout">
+            <input type="checkbox" id="lgpd-checkout">
+            <span>Autorizo o uso dos meus dados para processar este pedido, em conformidade com a <strong>LGPD</strong>.</label>
+
+        <button type="button" class="btn-finalizar" id="btn-finalizar" disabled>Finalizar pedido</button>
+        <button type="button" class="btn-limpar" id="btn-limpar-carrinho">Limpar carrinho</button>
+    </div>
+</aside>
+
+<div class="modal-sucesso" id="modal-sucesso" hidden role="dialog" aria-labelledby="titulo-sucesso">
+    <div class="modal-caixa">
+        <h3 id="titulo-sucesso">Pedido confirmado! 🎉</h3>
+        <p id="texto-sucesso"></p>
+        <button type="button" class="btn btn-primario" id="btn-fechar-sucesso">Continuar comprando</button>
+    </div>
+</div>
+
+<!-- Ordem importa: auth → cardápio → carrinho → interface -->
+<script src="js/auth.js"></script>
+<script src="js/cardapio.js"></script>
+<script src="js/imagem-produto.js"></script>
+<script src="js/carrinho.js"></script>
+<script src="js/compras.js"></script>
+</body>
+</html>

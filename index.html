@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peça comida típica do Nordeste — tapioca, acarajé, baião de dois e muito mais. Entrega rápida.">
+    <title>Raízes do Nordeste — Comida típica delivery</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body class="pagina-inicio">
+
+<header id="topo" class="topo-food">
+    <div class="topo-inner">
+        <a href="index.html" class="marca">
+            <img src="assets/logo.png" alt="Raízes do Nordeste">
+        </a>
+
+        <button type="button" class="btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+        <nav id="nav-principal" aria-label="Principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+
+                
+                <li id="menu-compras" class="nav-compras-destaque"><a href="compras.html" id="nav-cardapio">Cardápio</a></li>
+                <li id="menu-login"><a href="login.html">Entrar</a></li>
+                <li id="menu-cadastro"><a href="cadastro.html" class="btn-nav-cadastro">Cadastrar</a></li>
+                <li id="menu-usuario" style="display: none;"></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+<main>
+    <section class="hero-food" id="inicio">
+        <div class="hero-food-inner">
+            <div class="hero-food-texto">
+                <span class="badge-entrega">🛵 Entrega em 40–60 min</span>
+                <h1>Sabor do Nordeste <em>na sua mesa</em></h1>
+                <p>Tapioca, acarajé, baião de dois, bolo de rolo e dezenas de pratos autênticos. Peça online com poucos cliques.</p>
+
+                <form class="busca-hero" id="form-busca-inicio" role="search">
+                    <input type="search" id="busca-inicio" placeholder="Buscar prato, doce, bebida..." aria-label="Buscar comida">
+                    <button type="submit">Buscar</button>
+                </form>
+
+                <div class="hero-food-botoes">
+                    <a href="compras.html" class="btn btn-food-primario" id="btn-pedir-agora">Ver cardápio completo</a>
+                    <a href="#destaques" class="btn btn-food-secundario">Ver destaques</a>
+                </div>
+            </div>
+
+            <div class="hero-food-visual" aria-hidden="true">
+                <div class="prato-flutuante prato-1">🥤</div>
+                <div class="prato-flutuante prato-2">🍤</div>
+                <div class="prato-flutuante prato-3">🍛</div>
+                <div class="prato-flutuante prato-4">🍰</div>
+                <div class="hero-food-card-info">
+                    <strong>+16 pratos</strong>
+                    <span>a partir de R$ 6,50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--crie uma historiazinha com ajuda do chatgpt-->
+    <section class="secao-food">
+        <div class="secao-food-inner">
+            <h2>sobre nós</h2>
+            <div class="sobre-nos">
+
+                    O cheiro de cuscuz quente, café passado na hora e manteiga de garrafa ainda domina o pequeno salão da primeira unidade da Raízes do Nordeste, inaugurada há pouco mais de seis anos em um bairro tradicional de Recife. O que começou como um pequeno negócio familiar, comandado por Dona Francisca e seus dois filhos, transformou-se em uma das redes de lanchonetes nordestinas que mais crescem no Brasil, marcando presença em diversas capitais e cidades do interior.
+                    <br> <br>
+                    A proposta da empresa sempre foi clara: levar a autêntica culinária nordestina para o cotidiano urbano, unindo rapidez no atendimento, qualidade nos produtos e valorização da cultura regional. O cardápio, recheado de sabores tradicionais, oferece tapiocas artesanais, cuscuz recheado, bolo de macaxeira, sucos regionais naturais e cafés da manhã completos, conquistando um público fiel e cada vez maior.
+                    <br><br>
+                    Desde trabalhadores que passam pela lanchonete antes do expediente até famílias que aproveitam os fins de semana para compartilhar momentos especiais, todos encontram na Raízes do Nordeste um ambiente acolhedor, cheio de sabor e tradição. O compromisso da marca vai além de servir refeições: a empresa busca proporcionar uma verdadeira experiência nordestina, mantendo vivas as raízes culturais através da gastronomia.
+                    <br><br>
+                    Com um atendimento diferenciado, ingredientes selecionados e receitas que carregam o sabor caseiro do Nordeste, a Raízes do Nordeste continua expandindo sua história de sucesso, levando carinho, tradição e autenticidade para milhares de clientes em todo o país.
+                    <br><br>
+                    Faça seu pedido no melhor restaurante de comida nordestina do Brasil e descubra sabores que conquistam o coração a cada refeição!
+            </div>
+        </div>
+    </section>
+
+    <section class="faixa-beneficios" aria-label="Vantagens">
+        <div class="faixa-inner">
+            <div class="beneficio">
+                <span>⚡</span>
+                <div><strong>Entrega rápida</strong><small>40 a 60 minutos</small></div>
+            </div>
+            <div class="beneficio">
+                <span>🍽️</span>
+                <div><strong>Comida caseira</strong><small>Receitas nordestinas</small></div>
+            </div>
+            <div class="beneficio">
+                <span>📍</span>
+                <div><strong>Taxa fixa</strong><small>R$ 9,90 de entrega</small></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="secao-food" id="categorias">
+        <div class="secao-food-inner">
+            <h2>Categorias</h2>
+            <div class="categorias-scroll" id="lista-categorias-home"></div>
+        </div>
+    </section>
+
+    <section class="secao-food secao-food--cinza" id="destaques">
+        <div class="secao-food-inner">
+            <div class="secao-food-topo">
+                <div>
+                    <h2>Destaques do cardápio</h2>
+                    <p>Os pedidos mais amados — clique para adicionar ao carrinho</p>
+                </div>
+                <a href="compras.html" class="link-ver-tudo" id="link-ver-tudo">Ver tudo →</a>
+            </div>
+            <div class="grid-destaques" id="grid-destaques"></div>
+        </div>
+    </section>
+
+    
+
+    <section class="cta-pedido">
+        <div class="cta-pedido-inner">
+            <h2>Com fome de Nordeste?</h2>
+            <p>Faça login e peça agora!!! — seu carrinho espera por você meu camarada.</p>
+            <a href="compras.html" class="btn btn-food-primario btn-grande" id="btn-cta-final">Pedir comida agora</a>
+        </div>
+    </section>
+</main>
+
+<footer id="rodape" class="rodape-food">
+    <div class="rodape-inner">
+        <div>
+            <strong>Raízes do Nordeste 
+                <br>o restaurante mais famoso das regiões e dos estados do Nordeste            
+            </strong>
+            <p>Delivery de comida típica nordestina.</p>
+        </div>
+        <div class="rodape-links">
+            <a href="index.html">Instagram</a>
+            <a href="index.html">Whatsapp</a>
+            <a href="index.html">fale conosco</a>
+        </div>
+    </div>
+    <p class="rodape-copy">© 2026 Raízes do Nordeste ·  <strong>desenvolvido por:</strong> <small>Wanderley Junio</small></p>
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/cardapio.js"></script>
+<script src="js/imagem-produto.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
