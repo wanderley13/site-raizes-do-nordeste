@@ -1,4 +1,6 @@
-
+/**
+ tem a opção de colocar emoji,prefiro imagem
+ */
 const CARDAPIO = [
     {
         id: "tapioca",
@@ -22,7 +24,7 @@ const CARDAPIO = [
         id: "pastel",
         nome: "Pastel de vento",
         descricao: "Carne de sol e queijo",
-        preco: 12.5,
+        preco: 9.9,
         categoria: "salgados",
         emoji: "",
         imagem: "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3319443:1672692668/Massa%20de%20pastel.webp?f=16x9&h=698&w=1280&$p$f$h$w=33a9242"
@@ -78,7 +80,7 @@ const CARDAPIO = [
         id: "bolo-rolo",
         nome: "Bolo de rolo",
         descricao: "Fatia generosa com goiabada",
-        preco: 14.0,
+        preco: 15.0,
         categoria: "doces",
         emoji: "",
         imagem: "https://s2-g1.glbimg.com/VdmsaPSM0PgsOwajQIo9oVNd1m8=/0x0:943x596/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/K/u/YWxf8eTEmeK1k9mETK1g/boloderolo3.jpg"
@@ -96,7 +98,7 @@ const CARDAPIO = [
         id: "pé-moleque",
         nome: "Pé-de-moleque",
         descricao: "Doce de amendoim crocante",
-        preco: 8.5,
+        preco: 5.5,
         categoria: "doces",
         emoji: "",
         imagem: "https://img.cdndsgni.com/preview/10685357.jpg"
@@ -105,7 +107,7 @@ const CARDAPIO = [
         id: "cocada",
         nome: "Cocada queimada",
         descricao: "Coco fresco e açúcar",
-        preco: 7.0,
+        preco: 8.0,
         categoria: "doces",
         emoji: "",
         imagem: "https://s2-g1.glbimg.com/P8KVIRNvyNTB06irPEO0aJlXd1M=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/v/t/fhSXBMTAehMLZcBuTkwg/nc-cocada-queimada-2909242.jpg"
@@ -115,7 +117,7 @@ const CARDAPIO = [
         id: "caldo-cana",
         nome: "Caldo de cana",
         descricao: "500 ml gelado ou natural",
-        preco: 9.0,
+        preco: 8.0,
         categoria: "bebidas",
         emoji: "",
         imagem: "https://media.istockphoto.com/id/1267001589/pt/foto/sugarcane-juice-and-pastel-brazilian-food-caldo-de-cana.jpg?s=612x612&w=0&k=20&c=wlY90RbkVJ3rBaD-Tg9YUoOjjuj1eyppnHj1A7cp5-k="
@@ -123,8 +125,8 @@ const CARDAPIO = [
     {
         id: "cajuina",
         nome: "Cajuína",
-        descricao: "Suco de caju 300 ml",
-        preco: 11.0,
+        descricao: "refrigerante de caju 2 litros",
+        preco: 12.0,
         categoria: "bebidas",
         emoji: "",
         imagem: "https://dcdn-us.mitiendanube.com/stores/005/076/810/products/e9c7920621faa464cf65cd8d69de099f-e138a9c8d7882067fe17271889176476-1024-1024.webp"
@@ -133,7 +135,7 @@ const CARDAPIO = [
         id: "agua-coco",
         nome: "Água de coco",
         descricao: "Natural, direto do coco",
-        preco: 10.0,
+        preco: 5.0,
         categoria: "bebidas",
         emoji: "",
         imagem: "https://acdn-us.mitiendanube.com/stores/001/719/121/products/coco300ml1-8cd3fecf64e73b32c817454176185036-480-0.jpeg"
@@ -142,7 +144,7 @@ const CARDAPIO = [
         id: "cafe",
         nome: "Café nordestino",
         descricao: "Café forte com leite",
-        preco: 6.5,
+        preco: 3.5,
         categoria: "bebidas",
         emoji: "",
         imagem: "https://www.pngarts.com/files/1/Coffee-PNG-Image-Background.png"
